@@ -5,9 +5,8 @@ shinyUI(pageWithSidebar(
     
     # #selectInput("Year", "Choose the year of dataset:",
     #             choices = c("103", "104", "105")),
-    downloadButton('downloadData', 'Download'),
     uiOutput("choose_year"),   #這裡是關鍵
-    uiOutput("choose_columns2")
+    downloadButton('downloadData', 'Download')
   ),
   mainPanel(
     tableOutput('table')
